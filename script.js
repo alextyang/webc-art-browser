@@ -103,7 +103,7 @@ function loadSlide(slide, i) {
 
 
 
-function pageLeft() {
+function pageRight() {
   let oldIndex = currentIndex;
   currentIndex -= 1
   if (currentIndex < 0) {
@@ -134,7 +134,7 @@ function pageLeft() {
 }
 
 
-function pageRight() {
+function pageLeft() {
   let oldIndex = currentIndex;
   currentIndex += 1
   if (currentIndex > 9) {
