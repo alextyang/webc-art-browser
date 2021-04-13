@@ -1,0 +1,113 @@
+
+
+body {
+  background-color: #F4F5F5;
+
+  font-family: bookmania,serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+h1 {
+  font-weight: 700;
+  font-size: 30px;
+  color: #131515;
+}
+
+h2 {
+  font-weight: 700;
+  font-size: 30px;
+  color: #899494;
+}
+
+p {
+  font-weight: 400;
+  font-size: 20px;
+  color: #131515;
+}
+
+#content {
+  width:1000px;
+
+  margin: 100px auto;
+}
+
+.siteTitle {
+  text-align: center;
+  margin-top:64px;
+  font-size: 50px;
+}
+
+.siteTitle span {
+  color: #E26D5C;
+}
+
+.footer {
+  display: block;
+  text-align: center;
+  width: 500px;
+  margin: 0px auto;
+  margin-top: 800px;
+}
+
+
+#leftButton {
+  width: 50px;
+  position: absolute;
+  top:550px;
+  left:5vw;
+  cursor: pointer;
+}
+
+#rightButton {
+  width: 50px;
+  position: absolute;
+  top:550px;
+  right:5vw;
+  cursor: pointer;
+}
+
+
+
+.slide {
+  display:block;
+  position: absolute;
+  width: 1100px;
+  transition: opacity 0.4s, transform 0.4s;
+  transform: translateX(-50px);
+
+  opacity: 0;
+  pointer-events: none;
+}
+
+#slide0 {
+  transform: translateX(0px);
+  display:block;
+  opacity: 1;
+}
+
+.slide * {
+  position:absolute;
+}
+
+.slide .image {
+  width:400px;
+  height:550px;
+  object-fit: cover;
+  z-index:-1;
+}
+
+.slide .name {
+  left: 430px;
+  top: 50px;
+}
+
+.slide .artist {
+  left: 430px;
+  top: 80px;
+}
+
+.slide .desc {
+  left: 430px;
+  top: 150px;
+}
